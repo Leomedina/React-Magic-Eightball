@@ -1,11 +1,18 @@
-import React from 'react';
-import DefaultAnswers from 'DefaultAnswers';
+import React, { useState } from 'react';
+import DefaultAnswers from './defaultAnswers';
 
+function randomNum(size) {
+  return Math.floor(Math.random() * size)
+}
 
-const EightBall = ({ answers = DefaultAnswers }) => (
-  <>
-  null;
-  </>
-);
+function EightBall({ answers = DefaultAnswers }) {
+  const [answer, setAnswer] = useState("Think of a question");
 
-export default Eightball;
+  return (
+    <div className="Ball">
+      <p>{answer}</p>
+    </div>
+  )
+}
+
+export default EightBall;

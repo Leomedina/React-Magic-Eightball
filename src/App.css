@@ -1,10 +1,22 @@
 .App {
+  padding: 3em;
+  margin: 3em;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Ball {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  color: #fff;
+  font-weight: 800;
+  line-height: 150px;
+  text-align: center;
+  background: #000;
 }
 
 @media (prefers-reduced-motion: no-preference) {

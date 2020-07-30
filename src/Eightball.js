@@ -10,7 +10,7 @@ const EightBall = ({ answers = DefaultAnswers }) => {
   const [answer, setAnswer] = useState("Think of a question");
   const [state, setState] = useState("black");
   return (
-    <div className="Ball" style={{ backgroundColor: `${state}` }} onClick={() => {
+    <div className="Ball" style={{ backgroundColor: state }} onClick={() => {
       const newIndex = answers[randomNum(answers.length)]
       setAnswer(newIndex.msg);
       setState(newIndex.color);

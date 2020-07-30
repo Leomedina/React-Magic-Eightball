@@ -12,12 +12,16 @@
   width: 200px;
   height: 200px;
   border-radius: 200px;
-  color: #fff;
+  color: white;
   font-weight: 800;
   line-height: 150px;
   text-align: center;
+}
+
+.Ball-black {
   background: #000;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
